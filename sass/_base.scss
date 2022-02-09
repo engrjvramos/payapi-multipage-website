@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--dark-pink: #ba4270;
+	--link-water-white: #fbfcfe;
+	--san-juan-blue: #36536b;
+	--mirage-blue: #1b262f;
+	--charm-pink: #da6d97;
+	--light-san-juan-blue: #6c8294;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Public Sans', sans-serif;
+	font-size: 1.6rem;
+}
