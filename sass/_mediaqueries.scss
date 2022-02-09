@@ -1,0 +1,167 @@
+@media only screen and (max-width: 1040px) {
+	html {
+		font-size: 60%;
+	}
+	header {
+		padding-bottom: 10rem;
+		background-position: center -78.5rem;
+		background-size: 110rem;
+
+		.navbar {
+			margin-bottom: 2rem;
+		}
+		.hero {
+			.container {
+				flex-direction: column;
+
+				.hero-text {
+					max-width: 60rem;
+					text-align: center;
+					margin-top: -3rem;
+
+					h1 {
+						font-size: 5rem;
+					}
+
+					.schedule-form {
+						margin: 0 auto;
+					}
+
+					small {
+						margin: 2rem auto;
+					}
+				}
+
+				.hero-image {
+					order: -1;
+					margin-left: 5rem;
+					img {
+						height: 45rem;
+					}
+				}
+			}
+		}
+	}
+
+	.clients {
+		background-position: center -75rem;
+		background-size: 100rem;
+		padding: 10rem 3rem;
+
+		.container {
+			flex-direction: column;
+
+			.clients__description {
+				text-align: center;
+			}
+
+			.clients__logo {
+				order: -1;
+				width: 60rem;
+				grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+				margin-bottom: 6rem;
+			}
+		}
+	}
+
+	main {
+		background-image: none;
+
+		.container {
+			padding: 5rem 0 10rem;
+
+			&__first {
+				flex-direction: column;
+
+				.image {
+					width: 58rem;
+					margin: 0 0 -6rem 5rem;
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.description {
+					text-align: center;
+					margin: 0 auto;
+
+					h2 {
+						font-size: 5.2rem;
+					}
+
+					p {
+						padding: 2rem 0;
+						line-height: 2;
+						max-width: 60rem;
+					}
+				}
+			}
+
+			&__second {
+				flex-direction: column;
+				padding: 5rem 0;
+
+				.description {
+					text-align: center;
+					margin: 0 auto;
+
+					h2 {
+						font-size: 5.2rem;
+					}
+
+					p {
+						padding: 2rem 0;
+						line-height: 2;
+						max-width: 60rem;
+					}
+				}
+
+				.image {
+					order: -1;
+					width: 50rem;
+					margin: 0 0 -3.5rem 3.5rem;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+
+			&__third {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+
+				.card {
+					text-align: center;
+
+					img {
+						width: 10rem;
+					}
+
+					h3 {
+						margin: 2rem 0;
+					}
+
+					p {
+						line-height: 1.8;
+					}
+				}
+			}
+
+			&__fourth {
+				flex-direction: column;
+				text-align: center;
+
+				h2 {
+					margin-right: 0;
+					margin-bottom: 4rem;
+				}
+			}
+		}
+	}
+
+	footer {
+		background-position: calc(50% + 45rem) - 20rem;
+	}
+}
