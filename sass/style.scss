@@ -1,7 +1,9 @@
+@import 'mixins';
 @import 'base';
-@import 'components';
-@import 'home';
-@import 'pricing';
-@import 'about';
-@import 'contact';
-@import 'mediaqueries';
+@import './components/components';
+@import './components/navbar';
+@import './components/footer';
+@import './pages/home';
+@import './pages/pricing';
+@import './pages/about';
+@import './pages/contact';

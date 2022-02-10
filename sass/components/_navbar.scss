@@ -1,0 +1,165 @@
+.navbar {
+	margin-bottom: 2rem;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo {
+			margin-right: 6rem;
+		}
+
+		.nav-items {
+			margin-right: auto;
+
+			@include respond(tab-port) {
+				display: none;
+			}
+
+			.nav-item {
+				font-size: 1.7rem;
+				font-weight: 700;
+				transition: color 0.3s;
+
+				&:not(:last-of-type) {
+					margin-right: 4rem;
+				}
+
+				&:hover {
+					color: var(--charm-pink);
+				}
+			}
+		}
+
+		.schedule-button {
+			@include respond(tab-port) {
+				display: none;
+			}
+		}
+
+		.menu-btn {
+			display: none;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 4rem;
+			height: 4rem;
+			cursor: pointer;
+			z-index: 101;
+
+			@include respond(tab-port) {
+				display: flex;
+			}
+
+			.burger {
+				position: relative;
+				width: 3.5rem;
+				height: 3px;
+				border-radius: 10rem;
+				background: var(--san-juan-blue);
+				transition: all 0.3s ease;
+
+				&::before,
+				&::after {
+					content: '';
+					position: absolute;
+					width: 3.5rem;
+					height: 3px;
+					border-radius: 10rem;
+					background: var(--san-juan-blue);
+					transition: all 0.3s ease;
+				}
+
+				&::before {
+					transform: translateY(-0.9rem);
+				}
+
+				&::after {
+					transform: translateY(0.9rem);
+				}
+			}
+
+			&.open {
+				.burger {
+					transform: translateX(-5rem);
+					background: transparent;
+
+					&::before {
+						transform: rotate(45deg) translate(3.5rem, -3.5rem);
+						background: var(--link-water-white);
+					}
+
+					&::after {
+						transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+						background: var(--link-water-white);
+					}
+				}
+			}
+		}
+	}
+}
+
+.sidebar {
+	position: fixed;
+	width: 30rem;
+	top: 0;
+	bottom: 0;
+	right: -40rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var(--san-juan-blue);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+	z-index: 100;
+
+	.nav-items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		width: 100%;
+		transition: all 0.3s;
+
+		a {
+			font-size: 1.8rem;
+			color: var(--link-water-white);
+			width: 100%;
+			text-align: center;
+			padding: 3rem 0;
+
+			&:not(:last-child) {
+				margin-bottom: 4rem;
+			}
+
+			&:hover {
+				border-left: 3px solid var(--dark-pink);
+				background: var(--light-san-juan-blue);
+			}
+		}
+
+		a.active {
+			color: var(--dark-pink);
+			font-weight: 500;
+			border-left: 3px solid var(--dark-pink);
+		}
+
+		.schedule-button {
+			&:active {
+				color: var(--mirage-blue);
+				background-color: var(--link-water-white);
+			}
+		}
+	}
+
+	&.active {
+		right: 0;
+		visibility: visible;
+		opacity: 1;
+	}
+}
