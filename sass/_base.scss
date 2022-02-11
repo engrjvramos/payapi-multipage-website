@@ -25,6 +25,10 @@ html {
 	@include respond(tab-port) {
 		font-size: 57.5%;
 	}
+
+	@include respond(mobileXS) {
+		font-size: 52.5%;
+	}
 }
 
 body {
@@ -61,4 +65,8 @@ p {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+li {
+	list-style-type: none;
 }

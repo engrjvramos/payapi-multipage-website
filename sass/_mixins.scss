@@ -13,6 +13,12 @@ desktop > 1600px = 100em;
 		}
 	}
 
+	@if $breakpoint == mobileS {
+		@media only screen and (max-width: 28.125em) {
+			@content;
+		}
+	}
+
 	@if $breakpoint == mobile {
 		@media only screen and (max-width: 31.25em) {
 			@content;

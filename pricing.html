@@ -16,7 +16,7 @@
 
 <body>
 
-  <header>
+  <header class="pricing-header">
     <div class="navbar">
       <div class="container">
         <div class="logo">
@@ -30,16 +30,29 @@
           <a href="contact.html" class="nav-item">Contact</a>
         </nav>
         <button class="schedule-button">Schedule a Demo</button>
+        <div class="menu-btn">
+          <div class="burger"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="nav-items">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button class="schedule-button">Schedule a Demo</button>
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="pricing-main">
     <section class="pricing-section">
       <div class="container">
         <h1>Pricing</h1>
         <div class="pricing-plans">
-          <div class="plan">
+          <div class="plan free-plan">
             <h3>Free Plan</h3>
             <p>Build and test using our core set of products with up to 100 API requests.</p>
             <h1>$0.00</h1>
@@ -58,29 +71,25 @@
                 <p>identify</p>
               </li>
               <li class="checklist-item">
-                <img src="img/shared/desktop/icon-check.svg" alt="">
                 <p>investment</p>
               </li>
               <li class="checklist-item">
-                <img src="img/shared/desktop/icon-check.svg" alt="">
                 <p>assets</p>
               </li>
               <li class="checklist-item">
-                <img src="img/shared/desktop/icon-check.svg" alt="">
                 <p>liabilities</p>
               </li>
               <li class="checklist-item">
-                <img src="img/shared/desktop/icon-check.svg" alt="">
                 <p>income</p>
               </li>
             </ul>
             <hr>
-            <button class="btn-secondary">Request Access</button>
+            <button class="btn request-access">Request Access</button>
           </div>
-          <div class="plan">
-            <h3>Free Plan</h3>
-            <p>Build and test using our core set of products with up to 100 API requests.</p>
-            <h1>$0.00</h1>
+          <div class="plan basic-plan">
+            <h3>Basic Plan</h3>
+            <p>Launch your project with unlimited requests and no contractual minimums.</p>
+            <h1>$249.00</h1>
             <hr>
             <ul class="checklist-container">
               <li class="checklist-item">
@@ -104,21 +113,19 @@
                 <p>assets</p>
               </li>
               <li class="checklist-item">
-                <img src="img/shared/desktop/icon-check.svg" alt="">
                 <p>liabilities</p>
               </li>
               <li class="checklist-item">
-                <img src="img/shared/desktop/icon-check.svg" alt="">
                 <p>income</p>
               </li>
             </ul>
             <hr>
-            <button class="btn-secondary">Request Access</button>
+            <button class="btn request-access">Request Access</button>
           </div>
-          <div class="plan">
-            <h3>Free Plan</h3>
-            <p>Build and test using our core set of products with up to 100 API requests.</p>
-            <h1>$0.00</h1>
+          <div class="plan premium-plan">
+            <h3>Premium Plan</h3>
+            <p>Get tailored solutions, volume pricing, and dedicated support for your team.</p>
+            <h1>$499.00</h1>
             <hr>
             <ul class="checklist-container">
               <li class="checklist-item">
@@ -151,7 +158,7 @@
               </li>
             </ul>
             <hr>
-            <button class="btn-secondary">Request Access</button>
+            <button class="btn request-access">Request Access</button>
           </div>
         </div>
         <div class="ready-to-start">

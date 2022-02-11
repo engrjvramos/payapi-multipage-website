@@ -89,3 +89,32 @@
 		background-color: var(--dark-pink);
 	}
 }
+
+.ready-to-start {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 12rem 0;
+
+	@include respond(tab-land) {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 4.5rem;
+
+		@include respond(tab-land) {
+			margin-bottom: 5rem;
+		}
+
+		@include respond(mobileS) {
+			font-size: 3.8rem;
+			margin-bottom: 3rem;
+		}
+
+		@include respond(mobileXS) {
+			font-size: 3.2rem;
+		}
+	}
+}

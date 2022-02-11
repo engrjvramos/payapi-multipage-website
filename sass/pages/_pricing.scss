@@ -1,36 +1,226 @@
-.pricing-section {
-	.container {
-		h1 {
-		}
+.pricing-header {
+	background-image: none;
+	position: absolute;
+	padding: 5rem 5rem 0;
+	width: 100%;
 
-		.pricing-plans {
-			.plan {
-				h3 {
+	@include respond(tab-land) {
+		padding: 5rem 5rem 10rem;
+		background-position: center -76.5rem;
+		background-size: 110rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 5rem 2.5rem 10rem;
+	}
+
+	@include respond(mobile) {
+		background-position: center -79.5rem;
+	}
+}
+
+.pricing-main {
+	width: 100%;
+	background-image: url(../img/shared/desktop/bg-pattern-circle.svg);
+	background-repeat: no-repeat;
+	background-position: top -54rem right -5rem;
+	padding: 0 5rem;
+
+	@include respond(laptop) {
+		background-image: url(/img/shared/desktop/bg-pattern-circle.svg);
+		background-position: top -54rem right -20rem;
+	}
+
+	@include respond(tab-land) {
+		background-image: url(/img/shared/desktop/bg-pattern-circle.svg);
+		background-position: top -50rem right -46rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 0 2.5rem 35rem;
+	}
+
+	@include respond(mobile) {
+		background-position: top -67rem right -55rem;
+	}
+
+	.pricing-section {
+		.container {
+			padding: 15rem 0 10rem;
+			overflow: hidden;
+
+			@include respond(tab-land) {
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 5.6rem;
+				font-weight: 400;
+				margin-bottom: 4rem;
+
+				@include respond(tab-port) {
+					margin-bottom: 6rem;
 				}
 
-				p {
+				@include respond(mobile) {
+					font-size: 5rem;
+				}
+			}
+
+			.pricing-plans {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+				column-gap: 2rem;
+				row-gap: 7rem;
+
+				@include respond(tab-land) {
+					column-gap: 1rem;
 				}
 
-				h1 {
+				@include respond(tab-port) {
+					grid-template-columns: 1fr;
 				}
 
-				.checklist-container {
-					.checklist-item {
+				.plan {
+					h3 {
+						font-size: 3.2rem;
+						font-weight: 400;
+						color: var(--dark-pink);
+						margin-bottom: 1rem;
+					}
+
+					p {
+						line-height: 1.8;
+
+						@include respond(tab-port) {
+							font-size: 1.8rem;
+						}
+					}
+
+					h1 {
+						margin: 1rem 0 2rem;
+					}
+
+					.checklist-container {
+						padding: 2rem 0;
+
+						@include respond(tab-land) {
+							width: 15rem;
+							margin: 0 auto;
+						}
+
+						.checklist-item {
+							display: flex;
+							align-items: center;
+
+							&:not(:last-of-type) {
+								margin-bottom: 1rem;
+							}
+
+							@include respond(tab-land) {
+								text-align: left;
+							}
+
+							img {
+								margin-right: 2rem;
+							}
+
+							p {
+								text-transform: capitalize;
+
+								@include respond(tab-port) {
+									font-size: 1.8rem;
+								}
+							}
+						}
+					}
+
+					.request-access {
+						font-family: inherit;
+						font-size: 1.5rem;
+						font-weight: 500;
+						display: block;
+						background: transparent;
+						border: 1px solid var(--san-juan-blue);
+						outline: none;
+						padding: 1.5rem 3rem;
+						margin-top: 2rem;
+						border-radius: 100rem;
+						cursor: pointer;
+						transition: all 0.3s;
+
+						&:hover {
+							color: var(--link-water-white);
+							background-color: var(--charm-pink);
+							border: 1px solid var(--charm-pink);
+						}
+
+						&:active {
+							background-color: var(--dark-pink);
+						}
+
+						@include respond(tab-land) {
+							margin: 2rem auto 0;
+						}
+
+						@include respond(tab-port) {
+							font-size: 2rem;
+						}
 					}
 				}
 
-				.btn-secondary {
+				.free-plan {
+					.checklist-item {
+						&:nth-of-type(1),
+						&:nth-of-type(2),
+						&:nth-of-type(3) {
+							p {
+								color: var(--mirage-blue);
+								font-weight: 600;
+							}
+						}
+
+						&:nth-of-type(4),
+						&:nth-of-type(5),
+						&:nth-of-type(6),
+						&:nth-of-type(7) {
+							p {
+								margin-left: 3.5rem;
+							}
+						}
+					}
 				}
-			}
-		}
 
-		.ready-to-start {
-			display: flex;
-			align-items: center;
-			margin: 10rem 0;
+				.basic-plan {
+					.checklist-item {
+						&:nth-of-type(1),
+						&:nth-of-type(2),
+						&:nth-of-type(3),
+						&:nth-of-type(4),
+						&:nth-of-type(5) {
+							p {
+								color: var(--mirage-blue);
+								font-weight: 600;
+							}
+						}
 
-			h2 {
-				margin-right: auto;
+						&:nth-of-type(6),
+						&:nth-of-type(7) {
+							p {
+								margin-left: 3.5rem;
+							}
+						}
+					}
+				}
+
+				.premium-plan {
+					.checklist-item {
+						p {
+							color: var(--mirage-blue);
+							font-weight: 600;
+						}
+					}
+				}
 			}
 		}
 	}
