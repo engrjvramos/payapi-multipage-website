@@ -32,12 +32,12 @@
 	}
 
 	@include respond(tab-land) {
-		background-image: url(/img/shared/desktop/bg-pattern-circle.svg);
 		background-position: top -50rem right -46rem;
 	}
 
 	@include respond(tab-port) {
 		padding: 0 2.5rem 35rem;
+		background-position: top -65rem right -55rem;
 	}
 
 	@include respond(mobile) {

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayAPI | Frontend Mentor Challenge</title>
+
+  <!--======= FAVICON =======-->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!--======= CSS =======-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="contact-header">
+    <div class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/shared/desktop/logo.svg" alt="payAPI logo">
+          </a>
+        </div>
+        <nav class="nav-items">
+          <a href="pricing.html" class="nav-item">Pricing</a>
+          <a href="about.html" class="nav-item">About</a>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
+        <button class="schedule-button">Schedule a Demo</button>
+        <div class="menu-btn">
+          <div class="burger"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="nav-items">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button class="schedule-button">Schedule a Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <div class="container">
+      <h1>Submit a help request and we'll get in touch shortly.</h1>
+      <div class="contact">
+        <form class="contact__form" id="form">
+          <div class="form-control">
+            <input type="text" id="username" placeholder="Name">
+            <small class="error error-1">This field is required</small>
+          </div>
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Email address">
+            <small class="error error-2">This field is required</small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="company-name" placeholder="Company name">
+            <small class="error error-3">This field is required</small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="title" placeholder="Title">
+            <small class="error error-4">This field is required</small>
+          </div>
+          <div class="form-control">
+            <textarea rows="5" id="message" name="message" placeholder="Message"></textarea>
+            <small class="error error-5">This field is required</small>
+          </div>
+          <label class="custom-checkbox">
+            <input type="checkbox" value="accept-terms">
+            Stay up-to-date with company announcements and updates to our API
+          </label>
+          <button class="submit-btn" id="submit-btn" type="submit">Submit</button>
+        </form>
+        <div class="contact__clients">
+          <h2>Join the thousands of innovators already building with us</h2>
+          <div class="clients__logo">
+            <div class="logo-item">
+              <img src="img/shared/desktop/tesla.svg" alt="">
+            </div>
+            <div class="logo-item">
+              <img src="img/shared/desktop/microsoft.svg" alt="">
+            </div>
+            <div class="logo-item">
+              <img src="img/shared/desktop/hewlett-packard.svg" alt="">
+            </div>
+            <div class="logo-item">
+              <img src="img/shared/desktop/oracle.svg" alt="">
+            </div>
+            <div class="logo-item">
+              <img src="img/shared/desktop/google.svg" alt="">
+            </div>
+            <div class="logo-item">
+              <img src="img/shared/desktop/nvidia.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ready-to-start">
+        <h2>Ready to start?</h2>
+        <div class="schedule-form">
+          <input type="email" name="email" placeholder="Enter email address" required>
+          <button class="schedule-button">Schedule a Demo</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/shared/desktop/logo-white.svg" alt="payAPI logo">
+        </a>
+      </div>
+      <nav class="nav-items">
+        <a href="pricing.html" class="nav-item">Pricing</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <img src="./img/shared/desktop/facebook.svg" alt="">
+        </a>
+        <a href="#" class="social-link">
+          <img src="./img/shared/desktop/twitter.svg" alt="">
+        </a>
+        <a href="#" class="social-link">
+          <img src="./img/shared/desktop/linkedin.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
