@@ -12,6 +12,8 @@
 
   <!--======= CSS =======-->
   <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,9 +51,9 @@
 
   <main class="contact-main">
     <div class="container">
-      <h1>Submit a help request and we'll get in touch shortly.</h1>
+      <h1 data-aos="fade-up">Submit a help request and we'll get in touch shortly.</h1>
       <div class="contact">
-        <form class="contact__form" id="form">
+        <form class="contact__form" id="form" data-aos="fade-right">
           <div class="form-control">
             <input type="text" id="username" placeholder="Name">
             <small class="error error-1">This field is required</small>
@@ -78,35 +80,35 @@
           </label>
           <button class="submit-btn" id="submit-btn" type="submit">Submit</button>
         </form>
-        <div class="contact__clients">
-          <h2>Join the thousands of innovators already building with us</h2>
+        <div class="contact__clients" data-aos="fade-left">
+          <h2 data-aos="fade-up">Join the thousands of innovators already building with us</h2>
           <div class="clients__logo">
-            <div class="logo-item">
+            <div class="logo-item" data-aos="fade-up" data-aos-delay="300">
               <img src="img/shared/desktop/tesla.svg" alt="">
             </div>
-            <div class="logo-item">
+            <div class="logo-item" data-aos="fade-up" data-aos-delay="450">
               <img src="img/shared/desktop/microsoft.svg" alt="">
             </div>
-            <div class="logo-item">
+            <div class="logo-item" data-aos="fade-up" data-aos-delay="600">
               <img src="img/shared/desktop/hewlett-packard.svg" alt="">
             </div>
-            <div class="logo-item">
+            <div class="logo-item" data-aos="fade-up" data-aos-delay="750">
               <img src="img/shared/desktop/oracle.svg" alt="">
             </div>
-            <div class="logo-item">
+            <div class="logo-item" data-aos="fade-up" data-aos-delay="900">
               <img src="img/shared/desktop/google.svg" alt="">
             </div>
-            <div class="logo-item">
+            <div class="logo-item" data-aos="fade-up" data-aos-delay="1050">
               <img src="img/shared/desktop/nvidia.svg" alt="">
             </div>
           </div>
         </div>
       </div>
       <div class="ready-to-start">
-        <h2>Ready to start?</h2>
-        <div class="schedule-form">
+        <h2 data-aos="fade-up">Ready to start?</h2>
+        <div class="schedule-form" data-aos="fade-right">
           <input type="email" name="email" placeholder="Enter email address" required>
-          <button class="schedule-button">Schedule a Demo</button>
+          <button class="schedule-button" data-aos="fade-left">Schedule a Demo</button>
         </div>
       </div>
     </div>
@@ -140,8 +142,14 @@
 
 
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>

@@ -12,6 +12,8 @@
 
   <!--======= CSS =======-->
   <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,9 +52,9 @@
   <main class="pricing-main">
     <section class="pricing-section">
       <div class="container">
-        <h1>Pricing</h1>
+        <h1 data-aos="fade-up">Pricing</h1>
         <div class="pricing-plans">
-          <div class="plan free-plan">
+          <div class="plan free-plan" data-aos="fade-up" data-aos-delay="300">
             <h3>Free Plan</h3>
             <p>Build and test using our core set of products with up to 100 API requests.</p>
             <h1>$0.00</h1>
@@ -86,7 +88,7 @@
             <hr>
             <button class="btn request-access">Request Access</button>
           </div>
-          <div class="plan basic-plan">
+          <div class="plan basic-plan" data-aos="fade-up" data-aos-delay="300">
             <h3>Basic Plan</h3>
             <p>Launch your project with unlimited requests and no contractual minimums.</p>
             <h1>$249.00</h1>
@@ -122,7 +124,7 @@
             <hr>
             <button class="btn request-access">Request Access</button>
           </div>
-          <div class="plan premium-plan">
+          <div class="plan premium-plan" data-aos="fade-up" data-aos-delay="300">
             <h3>Premium Plan</h3>
             <p>Get tailored solutions, volume pricing, and dedicated support for your team.</p>
             <h1>$499.00</h1>
@@ -162,10 +164,10 @@
           </div>
         </div>
         <div class="ready-to-start">
-          <h2>Ready to start?</h2>
-          <div class="schedule-form">
+          <h2 data-aos="fade-up">Ready to start?</h2>
+          <div class="schedule-form" data-aos="fade-right">
             <input type="email" name="email" placeholder="Enter email address" required>
-            <button class="schedule-button">Schedule a Demo</button>
+            <button class="schedule-button" data-aos="fade-left">Schedule a Demo</button>
           </div>
         </div>
       </div>
@@ -201,7 +203,14 @@
 
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>
