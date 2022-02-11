@@ -36,7 +36,7 @@
 	}
 
 	@include respond(tab-port) {
-		padding: 0 2.5rem 35rem;
+		padding: 0 2.5rem 37rem;
 		background-position: top -65rem right -55rem;
 	}
 
@@ -46,7 +46,7 @@
 
 	.pricing-section {
 		.container {
-			padding: 15rem 0 10rem;
+			padding: 15rem 0;
 			overflow: hidden;
 
 			@include respond(tab-land) {
