@@ -53,62 +53,62 @@
     <div class="container">
       <h1 data-aos="fade-up">Submit a help request and we'll get in touch shortly.</h1>
       <div class="contact">
-        <form class="contact__form" id="form" data-aos="fade-right">
-          <div class="form-control">
+        <form class="contact__form" id="form">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="400">
             <input type="text" id="username" placeholder="Name">
             <small class="error error-1">This field is required</small>
           </div>
-          <div class="form-control">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="800">
             <input type="email" id="email" placeholder="Email address">
             <small class="error error-2">This field is required</small>
           </div>
-          <div class="form-control">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="1200">
             <input type="text" id="company-name" placeholder="Company name">
             <small class="error error-3">This field is required</small>
           </div>
-          <div class="form-control">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="1600">
             <input type="text" id="title" placeholder="Title">
             <small class="error error-4">This field is required</small>
           </div>
-          <div class="form-control">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="2000">
             <textarea rows="5" id="message" name="message" placeholder="Message"></textarea>
             <small class="error error-5">This field is required</small>
           </div>
-          <label class="custom-checkbox">
+          <label class="custom-checkbox" data-aos="fade-up" data-aos-delay="">
             <input type="checkbox" value="accept-terms">
             Stay up-to-date with company announcements and updates to our API
           </label>
-          <button class="submit-btn" id="submit-btn" type="submit">Submit</button>
+          <button class="submit-btn" id="submit-btn" type="submit" data-aos="fade-up">Submit</button>
         </form>
-        <div class="contact__clients" data-aos="fade-left">
+        <div class="contact__clients">
           <h2 data-aos="fade-up">Join the thousands of innovators already building with us</h2>
-          <div class="clients__logo">
-            <div class="logo-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="clients__logo" data-aos="fade-up">
+            <div class="logo-item">
               <img src="img/shared/desktop/tesla.svg" alt="">
             </div>
-            <div class="logo-item" data-aos="fade-up" data-aos-delay="450">
+            <div class="logo-item">
               <img src="img/shared/desktop/microsoft.svg" alt="">
             </div>
-            <div class="logo-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="logo-item">
               <img src="img/shared/desktop/hewlett-packard.svg" alt="">
             </div>
-            <div class="logo-item" data-aos="fade-up" data-aos-delay="750">
+            <div class="logo-item">
               <img src="img/shared/desktop/oracle.svg" alt="">
             </div>
-            <div class="logo-item" data-aos="fade-up" data-aos-delay="900">
+            <div class="logo-item">
               <img src="img/shared/desktop/google.svg" alt="">
             </div>
-            <div class="logo-item" data-aos="fade-up" data-aos-delay="1050">
+            <div class="logo-item">
               <img src="img/shared/desktop/nvidia.svg" alt="">
             </div>
           </div>
         </div>
       </div>
-      <div class="ready-to-start">
-        <h2 data-aos="fade-up">Ready to start?</h2>
-        <div class="schedule-form" data-aos="fade-right">
+      <div class="ready-to-start" data-aos="fade-up">
+        <h2>Ready to start?</h2>
+        <div class="schedule-form">
           <input type="email" name="email" placeholder="Enter email address" required>
-          <button class="schedule-button" data-aos="fade-left">Schedule a Demo</button>
+          <button class="schedule-button">Schedule a Demo</button>
         </div>
       </div>
     </div>
@@ -139,11 +139,6 @@
           </a>
         </div>
       </div>
-      <div class="copyright">
-        <p>Challenge by <a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a> | Coded and customized by
-          <a href="#">Jose Ramos</a>
-        </p>
-      </div>
     </div>
   </footer>
 
@@ -154,7 +149,8 @@
 
   <script>
     AOS.init({
-      duration: 1000,
+      duration: 1500,
+      once: true,
     });
   </script>
 </body>

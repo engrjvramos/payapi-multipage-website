@@ -26,7 +26,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			overflow: hidden;
 
 			@include respond(tab-land) {
 				flex-direction: column;
@@ -147,6 +146,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		column-gap: 5rem;
 
 		@include respond(tab-land) {
 			flex-direction: column;
@@ -253,7 +253,6 @@
 
 	.container {
 		padding: 10rem 0;
-		overflow: hidden;
 
 		@include respond(tab-land) {
 			padding: 5rem 0 20rem;

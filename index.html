@@ -50,7 +50,7 @@
 
     <section class="hero">
       <div class="container">
-        <div class="hero-text" data-aos="fade-right">
+        <div class="hero-text" data-aos="fade-up" data-aos-delay="800">
           <h1>Start building with our APIs for absolutely free.</h1>
           <div class="schedule-form">
             <input type="email" name="email" placeholder="Enter email address">
@@ -69,7 +69,7 @@
 
   <section class="clients">
     <div class="container">
-      <div class="clients__description" data-aos="fade-right">
+      <div class="clients__description" data-aos="fade-up" data-aos-delay="800">
         <h2>Who we work with</h2>
         <p>Today, millions of people around the world have successfully connected
           their accounts to apps they love using our API. We provide developers
@@ -80,23 +80,23 @@
           About Us
         </button>
       </div>
-      <div class="clients__logo">
-        <div class="logo-item" data-aos="fade-up" data-aos-delay="300">
+      <div class="clients__logo" data-aos="fade-up">
+        <div class="logo-item">
           <img src="img/shared/desktop/tesla-white.svg" alt="">
         </div>
-        <div class="logo-item" data-aos="fade-up" data-aos-delay="450">
+        <div class="logo-item">
           <img src="img/shared/desktop/microsoft-white.svg" alt="">
         </div>
-        <div class="logo-item" data-aos="fade-up" data-aos-delay="600">
+        <div class="logo-item">
           <img src="img/shared/desktop/hewlett-packard-white.svg" alt="">
         </div>
-        <div class="logo-item" data-aos="fade-up" data-aos-delay="750">
+        <div class="logo-item">
           <img src="img/shared/desktop/oracle-white.svg" alt="">
         </div>
-        <div class="logo-item" data-aos="fade-up" data-aos-delay="900">
+        <div class="logo-item">
           <img src="img/shared/desktop/google-white.svg" alt="">
         </div>
-        <div class="logo-item" data-aos="fade-up" data-aos-delay="1050">
+        <div class="logo-item">
           <img src="img/shared/desktop/nvidia-white.svg" alt="">
         </div>
       </div>
@@ -156,11 +156,11 @@
           </p>
         </div>
       </div>
-      <div class="ready-to-start">
-        <h2 data-aos="fade-up">Ready to start?</h2>
-        <div class="schedule-form" data-aos="fade-right">
+      <div class="ready-to-start" data-aos="fade-up">
+        <h2>Ready to start?</h2>
+        <div class="schedule-form">
           <input type="email" name="email" placeholder="Enter email address" required>
-          <button class="schedule-button" data-aos="fade-left">Schedule a Demo</button>
+          <button class="schedule-button">Schedule a Demo</button>
         </div>
       </div>
     </div>
@@ -191,23 +191,16 @@
           </a>
         </div>
       </div>
-      <div class="copyright">
-        <p>Challenge by <a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a> | Coded and customized by
-          <a href="#">Jose Ramos</a>
-        </p>
-      </div>
     </div>
   </footer>
-
-
-
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 
   <script>
     AOS.init({
-      duration: 1000,
+      duration: 1500,
+      once: 1,
     });
   </script>
 </body>

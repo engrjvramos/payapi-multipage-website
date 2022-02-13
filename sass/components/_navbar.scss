@@ -81,6 +81,9 @@
 			}
 
 			&.open {
+				position: fixed;
+				right: 2.5rem;
+
 				.burger {
 					transform: translateX(-5rem);
 					background: transparent;
@@ -105,15 +108,14 @@
 	width: 30rem;
 	top: 0;
 	bottom: 0;
-	right: -40rem;
+	right: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background: var(--san-juan-blue);
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-	visibility: hidden;
-	opacity: 0;
+	transform: translateX(30rem);
 	transition: all 0.3s;
 	z-index: 100;
 
@@ -158,8 +160,6 @@
 	}
 
 	&.active {
-		right: 0;
-		visibility: visible;
-		opacity: 1;
+		transform: translateX(0);
 	}
 }

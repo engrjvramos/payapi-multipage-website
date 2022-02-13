@@ -50,7 +50,6 @@
 
 	.container {
 		padding: 15rem 0;
-		overflow: hidden;
 
 		@include respond(tab-land) {
 			padding: 20rem 0 15rem;
