@@ -42,7 +42,6 @@ Users should be able to:
 | :---------------- | :----------------------         | :------------------------- |
 | Frontend Mentor   | Images & Figma design file      | https://frontendmentor.io/ |
 | Google Fonts      | Font Family                     | https://fonts.google.com/  |
-| REST Countries    | Country details api             | https://restcountries.com/ |
 
 
 ## Author
